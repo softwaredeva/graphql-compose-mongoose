@@ -1,6 +1,6 @@
 {
   "name": "graphql-compose-mongoose",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.0",
   "description": "Plugin for `graphql-compose` which derive a graphql types from a mongoose model.",
   "license": "MIT",
   "files": [
@@ -64,6 +64,6 @@
     "test": "npm run coverage && npm run lint",
     "link": "npm run build && npm link graphql-compose && npm link graphql-compose-connection && npm link graphql-compose-pagination && npm link mongoose && npm link",
     "unlink": "rimraf node_modules && npm install",
-    "semantic-release": "semantic-release"
+    "postinstall": "npm run build"
   }
 }
