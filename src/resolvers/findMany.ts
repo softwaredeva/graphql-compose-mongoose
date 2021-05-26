@@ -7,6 +7,8 @@ import {
   skipHelperArgs,
   filterHelper,
   filterHelperArgs,
+  searchHelper,
+  searchHelperArgs,
   sortHelper,
   sortHelperArgs,
   projectionHelper,
@@ -14,6 +16,7 @@ import {
   prepareAliasesReverse,
   replaceAliases,
   FilterHelperArgsOpts,
+  SearchHelperArgsOpts,
   SortHelperArgsOpts,
   LimitHelperArgsOpts,
 } from './helpers';
@@ -37,6 +40,7 @@ export interface FindManyResolverOpts {
   suffix?: string;
   /** Customize input-type for `filter` argument. If `false` then arg will be removed. */
   filter?: FilterHelperArgsOpts | false;
+  search?: SearchHelperArgsOpts | false;
   sort?: SortHelperArgsOpts | false;
   limit?: LimitHelperArgsOpts | false;
   skip?: false;
@@ -44,6 +48,7 @@ export interface FindManyResolverOpts {
 
 type TArgs = {
   filter?: any;
+  search?: any;
   limit?: number;
   skip?: number;
   sort?: string | string[] | Record<string, any>;
@@ -75,6 +80,11 @@ export function findMany<TSource = any, TContext = any, TDoc extends Document = 
         suffix: `${opts?.suffix || ''}Input`,
         ...opts?.filter,
       }),
+      ...searchHelperArgs(tc, model, {
+        prefix: 'SearchFindMany',
+        suffix: `${opts?.suffix || ''}Input`,
+        ...opts?.search,
+      }),
       ...skipHelperArgs(),
       ...limitHelperArgs({
         ...opts?.limit,
@@ -88,6 +98,7 @@ export function findMany<TSource = any, TContext = any, TDoc extends Document = 
       resolveParams.query = model.find();
       resolveParams.model = model;
       filterHelper(resolveParams, aliases);
+      searchHelper(resolveParams, aliases);
       skipHelper(resolveParams);
       limitHelper(resolveParams);
       sortHelper(resolveParams);
