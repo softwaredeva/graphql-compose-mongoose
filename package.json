@@ -64,6 +64,6 @@
     "test": "npm run coverage && npm run lint",
     "link": "npm run build && npm link graphql-compose && npm link graphql-compose-connection && npm link graphql-compose-pagination && npm link mongoose && npm link",
     "unlink": "rimraf node_modules && npm install",
-    "postinstall": "npm run build"
+    "postinstall": "npm ci && npm run build"
   }
 }
