@@ -3238,10 +3238,10 @@
   "resolved" "https://registry.npmjs.org/graphql-compose-pagination/-/graphql-compose-pagination-8.1.0.tgz"
   "version" "8.1.0"
 
-"graphql-compose@^7.15.0 || ^8.0.0", "graphql-compose@8.0.1":
-  "integrity" "sha512-2HgYbYKf04zzJuu0GEWJK2iEQeCPRUNHx32kttNe9sZTH/WMPdi2YmGdUyNiX0EBX2aT6mJrgMGv4Fs8Vf1vGw=="
-  "resolved" "https://registry.npmjs.org/graphql-compose/-/graphql-compose-8.0.1.tgz"
-  "version" "8.0.1"
+"graphql-compose@^7.15.0 || ^8.0.0", "graphql-compose@^7.21.4 || ^8.0.0":
+  "integrity" "sha512-vaoD/4m4biGYIUmIPzYPAq0DgQ4cPvcOtuf4lDPD6IxX+o6oQS8BPWIXPIBa3C9VPriNzpUapiOCQYQvAN+2iA=="
+  "resolved" "https://registry.npmjs.org/graphql-compose/-/graphql-compose-8.1.0.tgz"
+  "version" "8.1.0"
   dependencies:
     "@types/object-path" "^0.11.0"
     "graphql-type-json" "0.3.2"
@@ -5211,15 +5211,15 @@
   dependencies:
     "mongodb-memory-server-core" "6.9.6"
 
-"mongodb@^3.6.2", "mongodb@3.6.6":
-  "integrity" "sha512-WlirMiuV1UPbej5JeCMqE93JRfZ/ZzqE7nJTwP85XzjAF4rRSeq2bGCb1cjfoHLOF06+HxADaPGqT0g3SbVT1w=="
-  "resolved" "https://registry.npmjs.org/mongodb/-/mongodb-3.6.6.tgz"
-  "version" "3.6.6"
+"mongodb@^3.6.2", "mongodb@3.6.8":
+  "integrity" "sha512-sDjJvI73WjON1vapcbyBD3Ao9/VN3TKYY8/QX9EPbs22KaCSrQ5rXo5ZZd44tWJ3wl3FlnrFZ+KyUtNH6+1ZPQ=="
+  "resolved" "https://registry.npmjs.org/mongodb/-/mongodb-3.6.8.tgz"
+  "version" "3.6.8"
   dependencies:
     "bl" "^2.2.1"
     "bson" "^1.1.4"
     "denque" "^1.4.1"
-    "optional-require" "^1.0.2"
+    "optional-require" "^1.0.3"
     "safe-buffer" "^5.1.2"
   optionalDependencies:
     "saslprep" "^1.0.0"
@@ -5229,15 +5229,15 @@
   "resolved" "https://registry.npmjs.org/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz"
   "version" "1.0.2"
 
-"mongoose@*", "mongoose@5.12.7":
-  "integrity" "sha512-BniNwACn7uflK2h+M3juvyLH5nn9JDFgnB5KE2EwWFwSrRyhSpPnCtanRKJW3OtMCJyPccMIjtGZxHNW7JfnIw=="
-  "resolved" "https://registry.npmjs.org/mongoose/-/mongoose-5.12.7.tgz"
-  "version" "5.12.7"
+"mongoose@*", "mongoose@^5.0.0 || ^4.4.0":
+  "integrity" "sha512-16TVqYhHQdZNR8RTis/8iiTPy+nJPq0UhKyBFTucLLU3PWcDLY2gAGv6aOk0LygTNhEfgNnENgUUHhjVqTuh8w=="
+  "resolved" "https://registry.npmjs.org/mongoose/-/mongoose-5.12.11.tgz"
+  "version" "5.12.11"
   dependencies:
     "@types/mongodb" "^3.5.27"
     "bson" "^1.1.4"
     "kareem" "2.3.2"
-    "mongodb" "3.6.6"
+    "mongodb" "3.6.8"
     "mongoose-legacy-pluralize" "1.0.2"
     "mpath" "0.8.3"
     "mquery" "3.2.5"
@@ -5798,7 +5798,7 @@
 "opener@^1.5.1":
   "version" "1.5.1"
 
-"optional-require@^1.0.2":
+"optional-require@^1.0.3":
   "integrity" "sha512-RV2Zp2MY2aeYK5G+B/Sps8lW5NHAzE5QClbFP15j+PWmP+T9PxlJXBOOLoSAdgwFvS4t0aMR4vpedMkbHfh0nA=="
   "resolved" "https://registry.npmjs.org/optional-require/-/optional-require-1.0.3.tgz"
   "version" "1.0.3"
